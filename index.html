@@ -1,136 +1,365 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>MY PORTFOLIO</title>
-    <link rel="stylesheet" href="style.css">
-    <script src="https://kit.fontawesome.com/2f40f19e72.js" crossorigin="anonymous"></script></script>
-</head>
-<body>
-<div id="header">
-    <div class="container">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="style.css" />
+    <script
+      src="https://kit.fontawesome.com/2f40f19e72.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+  </head>
+  <body>
+    <div id="particles-js"></div>
+    <div id="header">
+      <div class="container">
         <nav>
-            <img src="images/logo.png" class="">
-            <ul>
-                <li><a href="#">Home</a></li>
-                <li><a href="#">About</a></li>
-                <li><a href="#">Services</a></li>
-                <li><a href="#">Portfolio</a></li>
-                <li><a href="#">Contact</a></li>
-            </ul>
+          <img src="images/logo.png" alt="Logo" />
+          <ul>
+            <li><a href="#header">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#service">Services</a></li>
+            <li><a href="#portfolio">Portfolio</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
         </nav>
         <div class="header-text">
-            <p>Biomedical Engineer</p>
-            <h1>Hi, I'm <span>Harikant</span></h1>
+          <p>Biomedical Engineer</p>
+          <h1>Hi, I'm <span>Harikant</span></h1>
         </div>
+      </div>
     </div>
-</div>
-<!-- -----------------about--------- -->
-<div id="about">
-    <div class="container">
+    <!-- -----------------about--------- -->
+    <div id="about">
+      <div class="container">
         <div class="row">
-            <div class="about-col-1">
-                <img src="images/about.png">
+          <div class="about-col-1">
+            <img src="images/about.png" />
+          </div>
+          <div class="about-col-2">
+            <h1 class="sub-title">About Me</h1>
+            <p>
+              I am Harikant Prasad Gupta, an undergraduate Biomedical
+              Engineering student at SRM University, Chennai, passionate about
+              merging technology with healthcare. My expertise includes AutoCAD,
+              PCB design, Python, C, MATLAB, COMSOL, Arduino IoT, Machine
+              Learning, Medical Instrumentation, Biosensors and Embedded
+              Systems. I have worked on projects like an Automatic CPAP device,
+              Prosthetic Arm using OpenCV, Electrolarynx, and VR-based medical
+              diagnosis. Additionally, I have completed internships in Machine
+              Learning, Embedded Systems, and Full-Stack Development and served
+              as a coordinator for the Java Full-Stack Developer Internship
+              Program. I aim to work in the medical device industry, focusing on
+              electronics, robotics, and non-invasive healthcare solutions.
+              Currently, I am seeking internship opportunities to gain hands-on
+              experience and contribute to impactful innovations. "OWN YOUR
+              JOURNEY" I believe in taking charge of my growth and making a
+              difference through engineering.
+            </p>
+            <div class="tab-titles">
+              <p class="tab-links active-link" onclick="opentab('skills')">
+                Skills
+              </p>
+              <p class="tab-links" onclick="opentab('experience1')">
+                Experience
+              </p>
+              <p class="tab-links" onclick="opentab('education')">Education</p>
             </div>
-            <div class="about-col-2">
-                <h1 class="sub-title">About Me</h1>
-                <p>I am Harikant Prasad Gupta, an undergraduate Biomedical Engineering student at SRM University, Chennai, passionate about merging technology with healthcare. My expertise includes AutoCAD, PCB design, Python, C, MATLAB, COMSOL, Arduino IoT, Machine Learning, Medical Instrumentation, Biosensors and Embedded Systems.
-
-                    I have worked on projects like an Automatic CPAP device, Prosthetic Arm using OpenCV, Electrolarynx, and VR-based medical diagnosis. Additionally, I have completed internships in Machine Learning, Embedded Systems, and Full-Stack Development and served as a coordinator for the Java Full-Stack Developer Internship Program.
-                    
-                    I aim to work in the medical device industry, focusing on electronics, robotics, and non-invasive healthcare solutions. Currently, I am seeking internship opportunities to gain hands-on experience and contribute to impactful innovations.
-                    
-                    "OWN YOUR JOURNEY" I believe in taking charge of my growth and making a difference through engineering.
-                    
-                    </p>
-                    <div class="tab-titles">
-                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
-                        <p class="tab-links" onclick="opentab('experience')">Experience</p>
-                        <p class="tab-links" onclick="opentab('education')">Education</p>
-                    </div>
-                    <div class="tab-contents active-tab" id="skills">
-                        <ul>
-                            <li><span>Biomedical Instrumentation</span><br>Automatic CPAP Device<br>Electrolarynx</li>
-                            <li><span>VR-based medical diagnosing</span><br>Game for lazy eye[Amblyopia]</li>
-                            <li><span>COMSOL simulation</span><br>Tissue Ablation elctrode design<br>and study of electric,thermal properties of Tissue</li>
-                            <li><span>Signal Processing</span><br>Sound signal analyzation</li>
-                        </ul>
-                    </div>
-                    <div class="tab-contents" id="experience">
-                        <ul>
-                            <li><span>Biomedical Reasearch </span><br>Tissue Ablation via IRR-Electroporation</li>
-                            <li><span>Internships</span><br>Machine Learning virtual <br>Embedded System AICTE <br>Java Full-stack Developer</li>
-                        </ul>
-                    </div>
-                    <div class="tab-contents" id="education">
-                        <ul>
-                            <li><span>2023-27 B.tech Biomedical Engineering</span><br>SRM University ,Kattankulathur,Chennai,India</li>
-                            <li><span>2023-24 12th Standard</span><br>CBSE<br>Gen. B.P Joshi Army Public School, Pithoragarh,India</li>
-                            <li><span>2020-21 10th Standard</span><br>CBSE<br>Gen. B.P Joshi Army Public School, Pithoragarh,India</li>
-                        </ul>
-                    </div>
+            <div class="tab-contents active-tab" id="skills">
+              <ul>
+                <li>
+                  <span>Biomedical Instrumentation</span><br />Automatic CPAP
+                  Device<br />Electrolarynx
+                </li>
+                <li>
+                  <span>VR-based medical diagnosing</span><br />Game for lazy
+                  eye[Amblyopia]
+                </li>
+                <li>
+                  <span>COMSOL simulation</span><br />Tissue Ablation elctrode
+                  design<br />and study of electric,thermal properties of Tissue
+                </li>
+                <li>
+                  <span>Signal Processing</span><br />Sound signal analyzation
+                </li>
+              </ul>
             </div>
+            <div class="tab-contents" id="experience1">
+              <ul>
+                <li>
+                  <span>Biomedical Reasearch </span><br />Tissue Ablation via
+                  IRR-Electroporation
+                </li>
+                <li>
+                  <span>Internships</span><br />Machine Learning virtual
+                  <br />Embedded System AICTE <br />Java Full-stack Developer
+                </li>
+              </ul>
+            </div>
+            <div class="tab-contents" id="education">
+              <ul>
+                <li>
+                  <span>2023-27 B.tech Biomedical Engineering</span><br />SRM
+                  University ,Kattankulathur,Chennai,India
+                </li>
+                <li>
+                  <span>2023-24 12th Standard</span><br />CBSE<br />Gen. B.P
+                  Joshi Army Public School, Pithoragarh,India
+                </li>
+                <li>
+                  <span>2020-21 10th Standard</span><br />CBSE<br />Gen. B.P
+                  Joshi Army Public School, Pithoragarh,India
+                </li>
+              </ul>
+            </div>
+          </div>
         </div>
+      </div>
     </div>
-</div>
-<!-- --------------service -->
- <div id="service">
-    <div class="container">
+    <!-- --------------service -->
+    <div id="service">
+      <div class="container">
         <h1 class="sub-title">My Services</h1>
         <div class="services-list">
-            <div>
-                <i class="fa-solid fa-heart-circle-bolt"></i>
-                <h2>Medical Intrumentation</h2>
-                <p>Biomedical Instrumentation is the field of engineering 
-                    that focuses on designing, developing, and maintaining devices and systems used to monitor, diagnose, and treat medical conditions. It integrates principles from electronics, sensors, signal processing, and 
-                     sciences to create advanced healthcare solutions.</p>
-                     <a href="#">Learn more</a>
-            </div>
-            <div>
-                <i class="fa-solid fa-chart-line"></i>
-                <h2>Matlab Signal Processing</h2>
-                <p>MATLAB is a powerful tool for signal processing, widely used in biomedical engineering, communications, audio processing, and control systems. It provides a comprehensive set of functions and toolboxes to analyze, filter, 
-                    and transform signals efficiently.</p>
-                     <a href="#">Learn more</a>
-            </div>
+          <div>
+            <i class="fa-solid fa-heart-circle-bolt"></i>
+            <h2>Medical Intrumentation</h2>
+            <p>
+              Biomedical Instrumentation is the field of engineering that
+              focuses on designing, developing, and maintaining devices and
+              systems used to monitor, diagnose, and treat medical conditions.
+              It integrates principles from electronics, sensors, signal
+              processing, and sciences to create advanced healthcare solutions.
+            </p>
+            <a href="#">Learn more</a>
+          </div>
+          <div>
+            <i class="fa-solid fa-heart-circle-bolt"></i>
+            <h2>Medical Intrumentation</h2>
+            <p>
+              Biomedical Instrumentation is the field of engineering that
+              focuses on designing, developing, and maintaining devices and
+              systems used to monitor, diagnose, and treat medical conditions.
+              It integrates principles from electronics, sensors, signal
+              processing, and sciences to create advanced healthcare solutions.
+            </p>
+            <a href="#">Learn more</a>
+          </div>
+          <div>
+            <i class="fa-solid fa-heart-circle-bolt"></i>
+            <h2>Medical Intrumentation</h2>
+            <p>
+              Biomedical Instrumentation is the field of engineering that
+              focuses on designing, developing, and maintaining devices and
+              systems used to monitor, diagnose, and treat medical conditions.
+              It integrates principles from electronics, sensors, signal
+              processing, and sciences to create advanced healthcare solutions.
+            </p>
+            <a href="#">Learn more</a>
+          </div>
+          <div>
+            <i class="fa-solid fa-chart-line"></i>
+            <h2>Matlab Signal Processing</h2>
+            <p>
+              MATLAB is a powerful tool for signal processing, widely used in
+              biomedical engineering, communications, audio processing, and
+              control systems. It provides a comprehensive set of functions and
+              toolboxes to analyze, filter, and transform signals efficiently.
+            </p>
+            <a href="#">Learn more</a>
+          </div>
         </div>
 
+      </div>
     </div>
- </div>
- <!-- --------------portfolio--- -->
- <div id="portfolio">
+    <!-- --------------portfolio--- -->
+    <div id="portfolio">
+        <div class="container-portfolio">
+          <h1 class="sub-title">My Work</h1>
+          <div class="work-list">
+            <div class="work">
+              <img src="images/marksheet10.jpg" alt="Work 1" />
+              <div class="layer">
+                <h3>Marksheet</h3>
+                <p>Details about this work.</p>
+                <a href="#"><i class="fa-solid fa-up-right-from-square"></i></a>
+              </div>
+            </div>
+            <div class="work">
+              <img src="images/marksheet10.jpg" alt="Work 2" />
+              <div class="layer">
+                <h3>Marksheet</h3>
+                <p>Details about this work.</p>
+                <a href="#"><i class="fa-solid fa-up-right-from-square"></i></a>
+              </div>
+            </div>
+            <div class="work">
+              <img src="images/marksheet10.jpg" alt="Work 3" />
+              <div class="layer">
+                <h3>Marksheet</h3>
+                <p>Details about this work.</p>
+                <a href="#"><i class="fa-solid fa-up-right-from-square"></i></a>
+              </div>
+            </div>
+            <a href="#" class="btn">See more</a>
+           
+          </div>
+        </div>
+      </div>
+      <!-- Modal for Zoomed Image -->
+<div id="imageModal" class="modal">
+    <span class="close" onclick="closeModal()">&times;</span>
+    <img class="modal-content" id="zoomedImage" />
+  </div>
+  <!-- contact -->
+<div id="contact">
     <div class="container">
-        <h1 class="sub-title">My Work</h1>
-        <div class="work-list">
-            <img src="images/marksheet10.jpg">
-            <div class="layer">
-                <h3>marksheet</h3>
-                <p>my progress till.</p>
-                <a href="#"></a>
+        <div class="row">
+            <div class="contact-left">
+                <h1 class="subtitle">Contact Me</h1>
+                <p><i class="fa-solid fa-envelope"></i> contact@example.com</p>
+                <p><i class="fa-solid fa-phone"></i> 0919677905846</p>
+                <div class="social-icons">
+                    <a href="#"><i class="fa-brands fa-facebook"></i></a>
+                    <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                    <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+                    <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                    
+                </div>
+                <a href="images/SOP Harikant.docx.docx" download class="btn btn2">Download CV</a>
+            </div>
+            <div class="contact-right">
+                <form>
+                    <input type="text" name="Name" placeholder="Your Name" required>
+                    <input type="email" name="email" placeholder="Your Email" required>
+                    <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                    <button type="submit" class="btn btn2">Submit</button>
+
+                </form>
 
             </div>
-            <img src="images/heart 2.jpg">
-            <img src="images/signal.jpg">
+            
         </div>
     </div>
+    
 </div>
 
 
+    <!-- --------------footer--- -->
+    <footer>
+      <div class="container">
+        <div class="footer-content">
+          <p>© Harikant Prasad Gupta. All rights reserved.</p>
+        </div>
+      </div>
+    </footer>
+    <!-- Your HTML content here -->
+
 <script>
-    var tablinks = document.getElementsByClassName("tab-links");
-    var tabcontents = document.getElementsByClassName("tab-contents");
-    function opentab(tabname){
-        for(tablink of tablinks){
-            tablink.classList.remove("active-link");
-        }
-        for(tabcontent of tabcontents){
-            tabcontent.classList.remove("active-tab");
-        }
-        event.currentTarget.classList.add("active-link");
-        document.getElementById(tabname).classList.add("active-tab");
+    // JavaScript code for zooming the image
+    function zoomImage(imgElement) {
+      const modal = document.getElementById("imageModal");
+      const modalImage = document.getElementById("zoomedImage");
+      modal.style.display = "block";
+      modalImage.src = imgElement.src; // Set the modal image source to the clicked image
     }
+  
+    // Function to close the modal
+    function closeModal() {
+      const modal = document.getElementById("imageModal");
+      modal.style.display = "none";
+    }
+  </script>
+  </body>
+  
+    <script>
+      function opentab(tabname) {
+        const tabLinks = document.querySelectorAll(".tab-links");
+        const tabContents = document.querySelectorAll(".tab-contents");
+
+        // Remove active class from all tab links and tab contents
+        tabLinks.forEach((link) => {
+          link.classList.remove("active-link");
+        });
+
+        tabContents.forEach((content) => {
+          content.classList.remove("active-tab");
+        });
+
+        // Add active class to the clicked tab link and the corresponding tab content
+        document
+          .querySelector(tab-links[onclick="opentab('${tabname}')"])
+          .classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+      }
+
+      particlesJS("particles-js", {
+  particles: {
+    number: { value: 80, density: { enable: true, value_area: 800 } },
+    color: { value: "#ffffff" },
+    shape: {
+      type: "circle",
+      stroke: { width: 0, color: "#000000" },
+      polygon: { nb_sides: 5 },
+    },
+    opacity: {
+      value: 0.5,
+      random: false,
+      anim: { enable: false, speed: 1, opacity_min: 0.1, sync: false },
+    },
+    size: {
+      value: 5,
+      random: true,
+      anim: { enable: false, speed: 40, size_min: 0.1, sync: false },
+    },
+    line_linked: {
+      enable: true,
+      distance: 150,
+      color: "#ffffff",
+      opacity: 0.4,
+      width: 1,
+    },
+    move: {
+      enable: true,
+      speed: 6,
+      direction: "none",
+      random: false,
+      straight: false,
+      out_mode: "out",
+      bounce: false,
+      attract: { enable: false, rotateX: 600, rotateY: 1200 },
+    },
+  },
+  interactivity: {
+    detect_on: "canvas",
+    events: {
+      onhover: { enable: true, mode: "repulse" },
+      onclick: { enable: true, mode: "push" },
+      resize: true,
+    },
+    modes: {
+      grab: { distance: 400, line_linked: { opacity: 1 } },
+      bubble: {
+        distance: 400,
+        size: 40,
+        duration: 2,
+        opacity: 8,
+        speed: 3,
+      },
+      repulse: { distance: 200, duration: 0.4 },
+      push: { particles_nb: 4 },
+      remove: { particles_nb: 2 },
+    },
+  },
+  retina_detect: true,
+});
+
+</script>
 </script>
     
-</body>
+    </script>
+    
+  </body>
 </html>
