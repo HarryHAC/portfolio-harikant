@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MY PORTFOLIO</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/2f40f19e72.js" crossorigin="anonymous"></script></script>
+</head>
+<body>
+<div id="header">
+    <div class="container">
+        <nav>
+            <img src="images/logo.png" class="">
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Services</a></li>
+                <li><a href="#">Portfolio</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </nav>
+        <div class="header-text">
+            <p>Biomedical Engineer</p>
+            <h1>Hi, I'm <span>Harikant</span></h1>
+        </div>
+    </div>
+</div>
+<!-- -----------------about--------- -->
+<div id="about">
+    <div class="container">
+        <div class="row">
+            <div class="about-col-1">
+                <img src="images/about.png">
+            </div>
+            <div class="about-col-2">
+                <h1 class="sub-title">About Me</h1>
+                <p>I am Harikant Prasad Gupta, an undergraduate Biomedical Engineering student at SRM University, Chennai, passionate about merging technology with healthcare. My expertise includes AutoCAD, PCB design, Python, C, MATLAB, COMSOL, Arduino IoT, Machine Learning, Medical Instrumentation, Biosensors and Embedded Systems.
+
+                    I have worked on projects like an Automatic CPAP device, Prosthetic Arm using OpenCV, Electrolarynx, and VR-based medical diagnosis. Additionally, I have completed internships in Machine Learning, Embedded Systems, and Full-Stack Development and served as a coordinator for the Java Full-Stack Developer Internship Program.
+                    
+                    I aim to work in the medical device industry, focusing on electronics, robotics, and non-invasive healthcare solutions. Currently, I am seeking internship opportunities to gain hands-on experience and contribute to impactful innovations.
+                    
+                    "OWN YOUR JOURNEY" I believe in taking charge of my growth and making a difference through engineering.
+                    
+                    </p>
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                        <p class="tab-links" onclick="opentab('education')">Education</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>Biomedical Instrumentation</span><br>Automatic CPAP Device<br>Electrolarynx</li>
+                            <li><span>VR-based medical diagnosing</span><br>Game for lazy eye[Amblyopia]</li>
+                            <li><span>COMSOL simulation</span><br>Tissue Ablation elctrode design<br>and study of electric,thermal properties of Tissue</li>
+                            <li><span>Signal Processing</span><br>Sound signal analyzation</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="experience">
+                        <ul>
+                            <li><span>Biomedical Reasearch </span><br>Tissue Ablation via IRR-Electroporation</li>
+                            <li><span>Internships</span><br>Machine Learning virtual <br>Embedded System AICTE <br>Java Full-stack Developer</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>2023-27 B.tech Biomedical Engineering</span><br>SRM University ,Kattankulathur,Chennai,India</li>
+                            <li><span>2023-24 12th Standard</span><br>CBSE<br>Gen. B.P Joshi Army Public School, Pithoragarh,India</li>
+                            <li><span>2020-21 10th Standard</span><br>CBSE<br>Gen. B.P Joshi Army Public School, Pithoragarh,India</li>
+                        </ul>
+                    </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- --------------service -->
+ <div id="service">
+    <div class="container">
+        <h1 class="sub-title">My Services</h1>
+        <div class="services-list">
+            <div>
+                <i class="fa-solid fa-heart-circle-bolt"></i>
+                <h2>Medical Intrumentation</h2>
+                <p>Biomedical Instrumentation is the field of engineering 
+                    that focuses on designing, developing, and maintaining devices and systems used to monitor, diagnose, and treat medical conditions. It integrates principles from electronics, sensors, signal processing, and 
+                     sciences to create advanced healthcare solutions.</p>
+                     <a href="#">Learn more</a>
+            </div>
+            <div>
+                <i class="fa-solid fa-chart-line"></i>
+                <h2>Matlab Signal Processing</h2>
+                <p>MATLAB is a powerful tool for signal processing, widely used in biomedical engineering, communications, audio processing, and control systems. It provides a comprehensive set of functions and toolboxes to analyze, filter, 
+                    and transform signals efficiently.</p>
+                     <a href="#">Learn more</a>
+            </div>
+        </div>
+
+    </div>
+ </div>
+ <!-- --------------portfolio--- -->
+ <div id="portfolio">
+    <div class="container">
+        <h1 class="sub-title">My Work</h1>
+        <div class="work-list">
+            <img src="images/marksheet10.jpg">
+            <div class="layer">
+                <h3>marksheet</h3>
+                <p>my progress till.</p>
+                <a href="#"></a>
+
+            </div>
+            <img src="images/heart 2.jpg">
+            <img src="images/signal.jpg">
+        </div>
+    </div>
+</div>
+
+
+<script>
+    var tablinks = document.getElementsByClassName("tab-links");
+    var tabcontents = document.getElementsByClassName("tab-contents");
+    function opentab(tabname){
+        for(tablink of tablinks){
+            tablink.classList.remove("active-link");
+        }
+        for(tabcontent of tabcontents){
+            tabcontent.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+    }
+</script>
+    
+</body>
+</html>
